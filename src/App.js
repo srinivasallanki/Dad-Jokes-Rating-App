@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import JokesList from './components/JokesList'
+const styles = {
+  app: {
+    display: 'flex',
+    background:
+      'linear-gradient(135deg, rgba(179, 229, 252, 1) 0%, rgba(179, 229, 252, 1) 50%, rgba(240, 98, 146, 1) 50%, rgba(240, 98, 146, 1) 100%)',
+    height: '100vh',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Rubik',
+  },
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.app}>
+      <JokesList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
